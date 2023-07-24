@@ -262,10 +262,19 @@ h2 {
 }
 /* Cakes */
 
+div.buttons {
+  margin: auto;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+}
+
 a.btn-action {
   color: white;
   background: #4e5785;
   width: 200px;
+  margin: 20px;
+  font-size: 20px;
 }
 
 /* Contact Us */
