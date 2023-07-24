@@ -3,50 +3,50 @@ const products = [
     name: "Avo Nice Day",
     image: "img/avo-nice-day-image.jpg",
     description: "Yogurt x Avocado",
-    price: 4.99,
+    price: 190,
   },
   {
     name: "Banana Dance With Some Berries",
     image: "img/banna-dance-with-some-berries.jpg",
     description: "Yogurt x Blueberry x Strawberry x Banana",
-    price: 5.49,
+    price: 190,
   },
   {
     name: "Nuts About You",
     image: "img/Nuts About You.jpg",
     description: "Yogurt x Pistachio x Almonds",
-    price: 4.99,
+    price: 190,
   },
   {
     name: "Waterberry Wonder Cake in Cup",
     image: "img/waterberry wonder.jpg",
     description:
       "Yogurt, strawberries, watermelon, almond dacquoise and pistachios",
-    price: 5.49,
+    price: 190,
   },
   {
     name: "Will Ube Mine",
     image: "img/Will Ube Mine.jpg",
     description: "Yogurt x Ube x Cheese Foam x Nata",
-    price: 4.99,
+    price: 190,
   },
   {
     name: "You’re The Berry Best",
     image: "img/You’re The Berry Best.jpg",
     description: "Yogurt x Strawberry",
-    price: 5.49,
+    price: 190,
   },
   {
     name: "Mango Choco Moo Yogurt Cake in Cup",
     image: "img/Mango-Choco-Moo-Yogurt-Cake-in-Cup.jpg",
     description: "Yogurt, mangoes, almond dacquoise and chocolate",
-    price: 4.99,
+    price: 190,
   },
   {
     name: "Chocnut Ka, Biscoff",
     image: "img/Chocnut Ka, Biscoff.jpg",
     description: "Yogurt x Choco x Nuts",
-    price: 5.49,
+    price: 190,
   },
 ];
 
@@ -68,7 +68,7 @@ function generateProductCards() {
     description.textContent = product.description;
 
     const price = document.createElement("p");
-    price.textContent = `$${product.price.toFixed(2)}`;
+    price.textContent = `$₱{product.price.toFixed(2)}`;
 
     card.appendChild(image);
     card.appendChild(name);
