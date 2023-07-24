@@ -113,10 +113,6 @@ a {
 }
 
 /* Popular */
-body {
-  padding: 0;
-  margin: 0;
-}
 
 .popular-section {
   padding: 4rem;
@@ -267,7 +263,7 @@ h2 {
 }
 /* Cakes */
 
-div.action-button {
+div.cta-button {
   color: white;
   background: #4e5785;
 }
