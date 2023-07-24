@@ -130,7 +130,6 @@ a {
 
 #album-rotator-holder {
   position: relative;
-  /* user-select: none; */
   will-change: transform;
   transition: all 0.01s ease-out;
   transition: all 0.01s linear;
