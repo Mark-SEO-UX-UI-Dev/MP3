@@ -267,6 +267,11 @@ h2 {
 }
 /* Cakes */
 
+.cta-button {
+  color: white;
+  background-color: #4e5785;
+}
+
 /* Contact Us */
 .contact-section {
   text-align: center;
