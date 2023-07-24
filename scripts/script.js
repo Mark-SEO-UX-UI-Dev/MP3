@@ -68,7 +68,7 @@ function generateProductCards() {
     description.textContent = product.description;
 
     const price = document.createElement("p");
-    price.textContent = `$₱{product.price.toFixed(2)}`;
+    price.textContent = `₱${product.price.toFixed(2)}`;
 
     card.appendChild(image);
     card.appendChild(name);
