@@ -262,7 +262,7 @@ h2 {
 }
 /* Cakes */
 
-div.buttons {
+div > row.buttons {
   margin: auto;
   text-align: center;
   justify-content: center;
