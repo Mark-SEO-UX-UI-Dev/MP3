@@ -262,7 +262,7 @@ h2 {
 }
 /* Cakes */
 
-.btn-action {
+a.btn-action {
   color: white;
   background: #4e5785;
   width: 200px;
