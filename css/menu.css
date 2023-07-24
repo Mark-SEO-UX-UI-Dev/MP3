@@ -262,9 +262,10 @@ h2 {
 }
 /* Cakes */
 
-div.btn-action {
+.btn-action {
   color: white;
   background: #4e5785;
+  width: 200px;
 }
 
 /* Contact Us */
