@@ -1,0 +1,546 @@
+body,
+h1,
+h2,
+p,
+ul,
+li {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+}
+
+html,
+body {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+  max-width: 100%;
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0 auto;
+}
+
+/* NavBar */
+.nav-background {
+  background-image: url("../img/navbar-bg-2.png");
+  background-size: cover;
+  height: 120px;
+  min-height: 100%;
+}
+
+.nav-link:hover {
+  border-bottom: 2px solid rgb(248, 137, 242);
+}
+
+.koomi-logo:hover {
+  filter: drop-shadow(0.1rem 0.1rem 0.1rem rgb(250, 124, 246));
+  transform: scale(1.25);
+}
+
+.navbar > .container,
+.navbar > .container-fluid {
+  margin-top: -60px;
+}
+
+.navrbar-toggler {
+  vertical-align: start;
+}
+
+.navbar-cta {
+  background-color: white;
+  color: #4e5785;
+  width: 150px;
+}
+
+.navbar-cta:hover {
+  background-color: #4e5785;
+  border: 1px solid white;
+  color: white;
+}
+
+a {
+  color: #4e5785;
+}
+/* NavBar */
+
+/* Media Queries */
+@media (width <= 991px) {
+  .contact-section {
+    width: 100%;
+  }
+
+  form.form {
+    width: 80%;
+    margin: 0 auto;
+    padding: 15px;
+  }
+
+  @media only screen and (max-width: 500px) {
+    .g-recaptcha {
+      transform: scale(0.77);
+      transform-origin: 0 0;
+    }
+  }
+
+  @media (width <= 315px) {
+    .g-recaptcha {
+      transform: scale(0.5);
+      transform-origin: 0 0;
+    }
+  }
+
+  div.follow {
+    margin: auto;
+    text-align: right;
+  }
+}
+/* Media Queries */
+
+/* Hero Section */
+.hero-slider {
+  position: relative;
+  width: 100%;
+  height: 840px;
+  overflow: hidden;
+}
+
+.slide-container {
+  display: flex;
+  transition: transform 1s ease-in-out;
+}
+
+.slide {
+  position: relative;
+  flex: 0 0 100%;
+}
+
+.slide img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.slider {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  animation: slideAnimation 8s infinite alternate;
+}
+
+.cta-button.a:hover {
+  color: rgb(248, 137, 242);
+}
+.content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-0%, -150%);
+  padding-right: 95px;
+  text-align: left;
+  color: black;
+}
+
+.content > h2 {
+  color: #4e5785;
+  font-weight: bolder;
+}
+
+.content h2 {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+}
+
+.content p {
+  font-size: 1.2rem;
+  margin-bottom: 30px;
+}
+
+.cta-button {
+  padding: 10px 20px;
+  font-size: 1.2rem;
+  background-color: #4e5785;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+.cta-button:hover {
+  border: 1px solid white;
+}
+/* Hero Section */
+
+/* Container styles */
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 1rem;
+}
+
+a {
+  color: white;
+}
+
+/* Product Listings styles */
+.products {
+  padding: 2rem 0;
+}
+
+.products h2 {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.product-list {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 1rem;
+}
+
+.product-card {
+  border: 1px solid #4e5785;
+  padding: 1rem;
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 1s ease, transform 1s ease;
+  margin-bottom: 20px;
+  box-shadow: 4px 4px 10px grey;
+}
+
+.product-card.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.product-card:hover {
+  transform: scale(1.1);
+  box-shadow: -4px -4px 10px #4e5785;
+}
+
+.product-card img {
+  max-width: 100%;
+  height: 150px;
+}
+
+.product-card h3 {
+  margin-top: 1rem;
+  color: #4e5785;
+}
+/* Product Listings styles */
+
+img.probiotics {
+  clip-path: ellipse(44% 50% at 50% 50%);
+}
+/* Benefits */
+
+/* Locations */
+.card {
+  width: 100%;
+  height: 300px;
+  perspective: 1000px;
+  box-shadow: 4px 4px 10px #4e5785;
+}
+
+.card-inner {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  transform-style: preserve-3d;
+  transition: transform 0.999s;
+}
+
+.card:hover .card-inner {
+  transform: rotateY(180deg);
+}
+
+.card-front,
+.card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+}
+
+.card-front {
+  background-color: #4e5785;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  border-radius: 10px;
+  justify-content: center;
+  font-size: 40px;
+  transform: rotateY(0deg);
+}
+
+.pasig {
+  background: url("../img/pasig.jpg") center/cover no-repeat;
+}
+
+.qc {
+  background: url("../img/quezon-city.jpg") center/cover no-repeat;
+}
+
+.eastwood {
+  background: url("../img/eastwood.jpg") center/cover no-repeat;
+}
+
+.pasay {
+  background: url("../img/pasay.jpg") center/cover no-repeat;
+}
+
+.makati {
+  background: url("../img/makati.jpg") center/cover no-repeat;
+}
+
+.mandaluyong {
+  background: url("../img/mandaluyong.jpg") center/cover no-repeat;
+}
+
+.card-back {
+  background-color: white;
+  color: #4e5785;
+  display: flex;
+  align-items: center;
+  border: 10px solid white;
+  border-radius: 10px;
+  justify-content: center;
+  transform: rotateY(180deg);
+  flex-direction: column;
+}
+
+.card-back > * {
+  margin: 0 10px;
+}
+/* Locations */
+
+/* Contact Us */
+.contact-section {
+  text-align: center;
+}
+
+#contact-us {
+  color: #4e5785;
+}
+
+.form {
+  background-color: rgb(255, 255, 255, 1em);
+  padding: 3.125em;
+  border-radius: 10px;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: left;
+  display: flex;
+  flex-direction: column;
+  box-shadow: 5px 5px 15px -1px #4e5785;
+  width: 50%;
+}
+
+.form:hover {
+  box-shadow: 5px 5px 30px rgb(248, 137, 242);
+}
+
+.signup {
+  color: black;
+  display: block;
+  font-weight: bold;
+  font-size: x-large;
+  margin-bottom: 0.5em;
+}
+
+.form-input {
+  width: 100%;
+  margin-bottom: 1.25em;
+  height: 40px;
+  border-radius: 5px;
+  border: 1px solid #4e5785;
+  padding: 0.8em;
+  font-family: "Inter", sans-serif;
+  outline: none;
+}
+
+textarea {
+  width: 100%;
+  border-radius: 5px;
+}
+
+.form-input:focus {
+  border: 1px solid #4e5785;
+  outline: none;
+}
+
+.form-marketing {
+  display: flex;
+  margin-bottom: 1.25em;
+  align-items: center;
+}
+
+.form-marketing > input {
+  margin-right: 0.625em;
+}
+
+label {
+  margin-top: 15px;
+  margin-bottom: 8px;
+  color: rgb(137, 135, 135);
+}
+
+.checkbox,
+input[type="checkbox"] {
+  accent-color: #4e5785;
+  margin-top: 8px;
+}
+
+.g-recaptcha {
+  justify-content: center;
+  text-align: center;
+  margin: auto;
+  margin-bottom: 10px;
+  width: 100%;
+}
+
+.form-submit {
+  width: 50%;
+  padding: 0.625em;
+  border-radius: 5px;
+  color: white;
+  background-color: #4e5785;
+  cursor: pointer;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+}
+
+.form-submit:hover {
+  color: #4e5785;
+  background-color: white;
+  border: 1px dashed #4e5785;
+  cursor: pointer;
+  transition: 0.5s;
+}
+
+/* Contact Us */
+
+div#footer-placeholder {
+  width: 100%;
+}
+
+div.wave {
+  margin: 0 auto;
+}
+
+div.wave svg path {
+  width: 100%;
+}
+
+/* Footer */
+footer {
+  padding-top: 150px;
+  height: auto;
+  background: 4e5785;
+  color: white;
+  margin: auto;
+  list-style-type: none;
+  background: transparent;
+  padding: 1rem;
+  /* top: 60px; */
+  position: relative;
+  width: 100%;
+  height: auto;
+}
+
+footer::after {
+  content: "";
+  position: absolute;
+  inset: -0.625em;
+  background: linear-gradient(20deg, white 0%, #4e5785 50%);
+  z-index: -1;
+  border-radius: 0%;
+}
+
+footer > p > a {
+  color: white;
+}
+
+.footer-brand {
+  text-align: left;
+}
+
+.footer-cta {
+  background-color: white;
+  color: #4e5785;
+  width: 200px;
+  font-size: 24px;
+}
+
+.brand-name:hover {
+  filter: drop-shadow(5px 5px 10px #4e5785);
+}
+
+.footer-columns {
+  text-align: left;
+}
+
+.footer-brand > a {
+  color: white;
+}
+
+div.follow {
+  margin: auto;
+  text-align: right;
+}
+
+p > a {
+  color: black;
+  font-size: 16px;
+}
+
+.brand {
+  padding-top: 30px;
+}
+
+p > a:hover {
+  color: white;
+}
+
+.social-media-icon {
+  filter: drop-shadow(5px 5px 10px white);
+}
+
+.social-media-icon:hover {
+  transform: scale(1.25);
+  filter: drop-shadow(5px 5px 10px #4e5785);
+}
+
+footer > p {
+  font-size: 17px;
+}
+
+a > img {
+  margin-right: 3px;
+}
+
+.privacy {
+  font-size: small;
+}
+
+div.copyright {
+  font-size: x-small;
+  text-align: center;
+  align-items: start;
+  vertical-align: middle;
+  margin-top: 50px;
+}
+
+.copyright-brand {
+  font-size: x-small;
+}
+/* Footer */

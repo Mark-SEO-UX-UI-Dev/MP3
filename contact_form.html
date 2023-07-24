@@ -1,0 +1,53 @@
+<!-- Contact Us -->
+<div class="container contact-section">
+  <div class="row col-lg-12 align-items-center">
+    <h2 class="display-3 fw-bold" id="contact-us">Contact Us</h2>
+    <form
+      class="form"
+      name="contact"
+      method="POST"
+      data-netlify-recaptcha="true"
+      data-netlify="true"
+      onSubmit="submit"
+    >
+      <span class="signup text-center">Partner with us!</span>
+      <label class="form-label">Complete Name:</label>
+      <input
+        type="text"
+        id="name"
+        name="name"
+        placeholder="ex. Juan Dela Cruz"
+        class="form-input"
+        required
+      />
+      <label class="form-label">Email address:</label>
+      <input
+        type="email"
+        id="email"
+        name="email"
+        placeholder="ex. juandelacruz@gmail.com"
+        class="form-input"
+        required
+      />
+      <label for="message" class="form-label">Your message:</label>
+      <textarea
+        id="message"
+        name="message"
+        placeholder="Please type your message here."
+        rows="10"
+      >
+      </textarea>
+      <div class="form-marketing">
+        <input id="okayToEmail" type="checkbox" class="custom" checked />
+        <label for="okayToEmail" class="checkbox">
+          <small
+            >I understand that I have to submit some contact information.</small
+          >
+        </label>
+      </div>
+      <div class="recaptcha mx-auto" data-netlify-recaptcha="true"></div>
+      <button class="form-submit" type="submit">Submit</button>
+    </form>
+  </div>
+</div>
+<!-- Contact Us -->
