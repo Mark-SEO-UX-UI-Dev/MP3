@@ -267,9 +267,9 @@ h2 {
 }
 /* Cakes */
 
-.cta-button {
+div.action-button {
   color: white;
-  background-color: #4e5785;
+  background: #4e5785;
 }
 
 /* Contact Us */
