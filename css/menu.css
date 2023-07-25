@@ -71,6 +71,35 @@ a {
 }
 /* NavBar */
 
+/* Shopping cart sidebar */
+  .shopping {
+    position: fixed;
+    top: 0;
+    right: 0;
+    height: 100%;
+    width: 350px; /* Adjust this value to set the width of the sidebar as per your design */
+    background-color: #f0f0f0;
+    padding: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    transform: translateX(100%);
+    transition: transform 0.3s ease-in-out;
+    z-index: 9999;
+  }
+
+  .shopping.active {
+    transform: translateX(0);
+  }
+
+  /* Proceed to Checkout button styling */
+  .proceedToCheckout {
+    display: block;
+    margin-top: 20px;
+  }
+
+ /* Shopping cart sidebar */ 
+
+
+
 /* Media Queries */
 @media (width <= 991px) {
   .contact-section {
@@ -261,21 +290,6 @@ h2 {
   font-weight: bolder;
 }
 /* Cakes */
-
-div > row.buttons {
-  margin: auto;
-  text-align: center;
-  justify-content: center;
-  align-items: center;
-}
-
-a.btn-action {
-  color: white;
-  background: #4e5785;
-  width: 200px;
-  margin: 20px;
-  font-size: 20px;
-}
 
 /* Contact Us */
 .contact-section {
