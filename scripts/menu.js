@@ -1,4 +1,4 @@
-  const cartIcon = document.querySelector('.navbar-cart');
+const cartIcon = document.querySelector('.navbar-cart');
   const shoppingCart = document.querySelector('.shopping');
   const closeShopping = document.querySelector('.closeShopping');
   const proceedToCheckoutBtn = document.querySelector('.proceedToCheckout');
@@ -6,13 +6,12 @@
   const totalElement = document.querySelector('.total');
   const quantityElement = document.querySelector('.quantity');
 
-  // Event listener for the cart icon/button to open the shopping cart sidebar
+
   cartIcon.addEventListener('click', () => {
     shoppingCart.classList.add('active');
     reloadCard();
   });
 
-  // Event listener for the close button to hide the shopping cart sidebar
   closeShopping.addEventListener('click', () => {
     shoppingCart.classList.remove('active');
   });
@@ -184,15 +183,10 @@ let products = [
   },
 ];
 
-  // Function to handle "Proceed to Checkout" button click
+
   proceedToCheckoutBtn.addEventListener('click', () => {
-    // Add code to handle redirection to the checkout page
-    // You can use window.location.href or any routing library you are using
-    // For example:
     window.location.href = './checkout.html';
   });
-
-  // ... Your existing JavaScript code ...
 
   function addToCard(key) {
     if (listCards[key] == null) {
