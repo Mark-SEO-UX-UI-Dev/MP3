@@ -8,9 +8,10 @@
     @include("layouts/head")
     <title>Login</title>
     <meta name="description" content="" />
-
-    <link rel="stylesheet" href="{{ asset('../../../../public/css/signup.css }}">
-</head>
+@push('styles')
+    <link rel="stylesheet" href="{{ URL::asset('css/signup.css) }}">
+@endpush
+  </head>
 <body>
 
 <section>
