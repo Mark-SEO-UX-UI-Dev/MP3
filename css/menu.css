@@ -69,7 +69,20 @@ body {
 a {
   color: #4e5785;
 }
+
+span.quantity {
+  color: white;
+  border-radius: 100%;
+  background: rgb(246, 56, 144);
+  padding: 3px 10px;
+}
 /* NavBar */
+
+.nav-item {
+  margin: auto;
+  align-items: center;
+  top: 20px;
+}
 
 /* Media Queries */
 @media (width <= 991px) {
@@ -135,8 +148,6 @@ a {
   transition: all 0.01s linear;
 }
 
-div#album-rotator-holder {
-}
 #album-rotator:after {
   content: "";
   position: absolute;
@@ -261,11 +272,51 @@ h2 {
   font-weight: bolder;
 }
 
+<<<<<<< HEAD
+.add-to-cart {
+  color: white;
+  background: #4e5785;
+=======
 .cakeProducts,
 .beverageProducts {
   margin-top: 100px;
+>>>>>>> b3b5334a2f2470d4730729dd78258e9863b98b7f
 }
 /* Cakes */
+
+/* Table */
+thead {
+  background-color: #4e5785;
+  color: white;
+}
+
+table,
+th,
+td {
+  border: 1px solid lightgrey;
+  border-collapse: collapse;
+}
+
+th {
+  font-size: 20px;
+  text-align: center;
+}
+
+td.item-row:hover {
+  background-color: #c6cdf2;
+}
+
+tr.item-row:hover {
+  background-color: #c6cdf2;
+}
+
+.go-btn {
+  color: white;
+  background: #4e5785;
+  font-size: 28px;
+  font-weight: bold;
+}
+/* Table */
 
 /* Contact Us */
 .contact-section {
@@ -341,8 +392,19 @@ label {
 
 .checkbox,
 input[type="checkbox"] {
-  accent-color: #4e5785;
   margin-top: 8px;
+}
+
+@supports (accent-color: #007bff) {
+  .checkbox,
+  input[type="checkbox"] {
+    accent-color: #007bff;
+  }
+}
+/* Fallback color */
+.checkbox,
+input[type="checkbox"] {
+  color: #007bff;
 }
 
 .g-recaptcha {
@@ -449,7 +511,7 @@ p > a:hover {
 }
 
 .social-media-icon:hover {
-  scale: 1.25;
+  transform: scale(1.25);
   filter: drop-shadow(5px 5px 10px #4e5785);
 }
 

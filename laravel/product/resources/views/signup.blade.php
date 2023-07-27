@@ -8,6 +8,8 @@
     @include("layouts/head")
     <title>Login</title>
     <meta name="description" content="" />
+    <link rel="stylesheet" hre="{{ URL::asset('css/signup.css') }}">
+
 @push('styles')
     <link rel="stylesheet" href="{{ URL::asset('css/signup.css) }}">
 @endpush
